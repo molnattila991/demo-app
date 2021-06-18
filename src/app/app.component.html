@@ -3,6 +3,14 @@
     <mat-icon (click)="toggle()">menu</mat-icon>
   </button>
   <span>Demo APP</span>
+  <ul>
+    <li>
+      <a [routerLink]="['a']">FeatureA</a>
+    </li>
+    <li>
+      <a [routerLink]="['b']">FeatureB</a>
+    </li>
+  </ul>
   <span class="spacer"></span>
   <!-- <mat-icon>settings</mat-icon> -->
 </mat-toolbar>

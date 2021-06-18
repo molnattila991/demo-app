@@ -17,7 +17,8 @@ export class UiSettingsService {
       ),
       map(([action, value]) => value)
     ).subscribe(opened => {
-      if (opened) {
+        console.log(opened);
+        if (opened) {
         this.command.closeSidebar();
       } else {
         this.command.openSidebar();

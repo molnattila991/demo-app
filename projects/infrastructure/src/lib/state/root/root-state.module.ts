@@ -10,7 +10,7 @@ import { RootStateQuery } from './root-state-query.service';
 @NgModule({
     imports: [
         StoreModule.forRoot({ ui: uiReducer }),
-        EffectsModule.forRoot([AppEffects])
+        EffectsModule.forRoot([AppEffects]),
     ],
     providers: [
         { provide: INJECTION_TOKEN.STATE.COMMAND.ROOT, useClass: RootStateCommand },

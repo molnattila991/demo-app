@@ -10,6 +10,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UiSettingsService } from './services/ui-settings.service';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,12 @@ import { UiSettingsService } from './services/ui-settings.service';
     MatButtonModule,
     MatToolbarModule,
     AppRoutingModule,
-    RootStateModule
+
+    RootStateModule,
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      autoPause: true, // Pauses recording actions and state changes when the extension window is not open
+  })
   ],
   providers: [
     UiSettingsService

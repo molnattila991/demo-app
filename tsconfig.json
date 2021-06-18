@@ -8,6 +8,10 @@
         "dist/core/core",
         "dist/core"
       ],
+      "features": [
+        "dist/features/features",
+        "dist/features"
+      ],
       "infrastructure": [
         "dist/infrastructure/infrastructure",
         "dist/infrastructure"

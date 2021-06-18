@@ -1,0 +1,1 @@
+export {FeatureAModuleState} from "./feature-a-module-state"

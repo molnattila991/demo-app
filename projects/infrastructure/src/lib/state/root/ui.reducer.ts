@@ -8,7 +8,10 @@ const load = () => {
     };
 };
 
-export const initialState: Readonly<AppUiState> = load()
+// export const initialState: Readonly<AppUiState> = load()
+export const initialState: Readonly<AppUiState> = <AppUiState>{
+    opened: true
+};
 
 const _uiReducer = createReducer(
     initialState,

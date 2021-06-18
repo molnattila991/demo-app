@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UiSettingsService } from './services/ui-settings.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo-app';
+  constructor(private uiSettings: UiSettingsService) {
+  }
+
+  toggle() {
+    this.uiSettings.toggle();
+  }
 }

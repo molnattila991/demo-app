@@ -7,6 +7,10 @@
       "core": [
         "dist/core/core",
         "dist/core"
+      ],
+      "infrastructure": [
+        "dist/infrastructure/infrastructure",
+        "dist/infrastructure"
       ]
     },
     "outDir": "./dist/out-tsc",

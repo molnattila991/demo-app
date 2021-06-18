@@ -3,12 +3,12 @@ const stateTokenPrefix = tokenPrefix + "state-";
 const toolsTokenPrefix = tokenPrefix + "tools-";
 const apiTokenPrefix = tokenPrefix + "api-";
 
-export const STATE = {
+const STATE = {
     QUERY: {
-
+        ROOT: stateTokenPrefix + "query-root"
     },
     COMMAND: {
-
+        ROOT: stateTokenPrefix + "command-root"
     }
 }
 

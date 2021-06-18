@@ -10,7 +10,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UiSettingsService } from './services/ui-settings.service';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ngrxExtModules } from 'src/build-specifics/ngrx-devtools';
 
 @NgModule({

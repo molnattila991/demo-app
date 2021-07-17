@@ -110,6 +110,43 @@
             ],
             "scripts": []
           }
+        },
+        "cypress-run": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "demo-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "demo-app:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "demo-app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "demo-app:serve:production"
+            }
+          }
+        },
+        "e2e": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "demo-app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "demo-app:serve:production"
+            }
+          }
         }
       }
     },
@@ -140,6 +177,18 @@
             "main": "projects/core/src/test.ts",
             "tsConfig": "projects/core/tsconfig.spec.json",
             "karmaConfig": "projects/core/karma.conf.js"
+          }
+        },
+        "cypress-run": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "core:serve",
+            "configFile": "projects/core/cypress.json"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "core:serve:production"
+            }
           }
         }
       }
@@ -202,6 +251,18 @@
             "main": "projects/features/src/test.ts",
             "tsConfig": "projects/features/tsconfig.spec.json",
             "karmaConfig": "projects/features/karma.conf.js"
+          }
+        },
+        "cypress-run": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "features:serve",
+            "configFile": "projects/features/cypress.json"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "features:serve:production"
+            }
           }
         }
       }

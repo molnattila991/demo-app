@@ -58,8 +58,8 @@
                   "with": "src/environments/environment.prod.ts"
                 },
                 {
-                  "replace": "src/app/build-specifics/index.ts",
-                  "with": "src/app/build-specifics/index.prod.ts"
+                  "replace": "src/app/build-specifics/ngrx-devtools.ts",
+                  "with": "src/app/build-specifics/ngrx-devtools.prod.ts"
                 }
               ],
               "outputHashing": "all"
